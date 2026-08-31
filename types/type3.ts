@@ -68,3 +68,10 @@ const user = {
 
 console.log(typeof user); // object
 console.log(Array.isArray(user));
+type addressType = (typeof user)["address"];
+const newAddress: addressType = {
+  city: "Las Vegas",
+  state: "NV",
+  country: "USA",
+};
+console.log(newAddress);
